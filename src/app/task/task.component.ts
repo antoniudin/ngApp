@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConnectableObservable } from 'rxjs';
 import { TaskService } from './task.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { TaskService } from './task.service';
 export class TaskComponent {
   title = "This part works";
   parts;
-  
+
   constructor(service: TaskService) {
     this.parts = service.getTasks();
     

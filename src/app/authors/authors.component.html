@@ -1,0 +1,15 @@
+<h1>Authors</h1>
+<ul>
+    <li *ngFor="let item of authors">{{item}}</li>
+</ul>
+
+<table>
+    <td [textContent] = "value"></td>
+    <td textContent = {{value}}></td>
+    <td [attr.userId]="value"></td>
+</table>
+
+<button class="btn btn-primary" [style.color]="isActive? 'black' : 'red' " [class.active]="isActive">Button</button>
+
+<input [(ngModel)]="email" (keyup.enter) = "func()" />
+<button (click)="clickButton()">Action</button>
