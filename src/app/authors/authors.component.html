@@ -9,7 +9,16 @@
     <td [attr.userId]="value"></td>
 </table>
 
+<p>{{text|summary}}</p>
+
+
+<span class="glyphicon glyphicon-envelope"></span>
+            
+
 <button class="btn btn-primary" [style.color]="isActive? 'black' : 'red' " [class.active]="isActive">Button</button>
 
 <input [(ngModel)]="email" (keyup.enter) = "func()" />
 <button (click)="clickButton()">Action</button>
+
+<p>{{obj.name | uppercase}}</p>
+<p>{{obj.date | date: 'short'}}</p>

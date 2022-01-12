@@ -1,3 +1,5 @@
 <h2>Angular App</h2>
 <task></task>
-<authors></authors>
+<app-button></app-button>
+<!-- <authors></authors> -->
+<app-button [is-cond]="post.condition" (change)="onButtonChange($event)"></app-button>

@@ -13,6 +13,14 @@ export class AuthorsComponent {
   authors;
   email = "default@default.com"
 
+  text = "lorem ipsum dolore is a simple text for example"
+
+  obj = {
+    name: "tony",
+    num: 10.25,
+    date: new Date(2022,3,1)
+  }
+
   func () {
     console.log(this.email)
   }
